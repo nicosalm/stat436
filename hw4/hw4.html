@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)file:///private/var/folders/q4/ggqzm3zx7v31_2gslsqng6m00000gn/T/crossnote202537-5552-1i4vdqj.nd2k.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>hw5</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./hw5_files/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h2 id="homework-4-structured-data--models">HOMEWORK 4: STRUCTURED DATA + MODELS </h2>
+<h3 id="code-diary">Code Diary </h3>
+<p><strong>a. Programming Environment/Workflow</strong><br>
+I primarily use <a href="https://github.com/randy3k/radian">radian</a> in the command prompt alongside neovim to edit .R files and view rendered plots. For Shiny applications, I split my screen with a localhost Chrome tab on the right to see real-time updates as I code. I always use git.</p>
+<p><strong>b. Planning Techniques</strong><br>
+When approaching a new visualization task, I focus on establishing control from the beginning rather than coding reactively. I start by clearly defining the visual objectives and data requirements. I sketch rough layouts on paper  before writing any code. For complex visualizations, I break down the implementation into logical components (data preparation, base plot creation, aesthetic refinements) and do them sequentially. And, of course, I also consult the documentation for unfamiliar packages to understand their capabilities (and cool features) before implementation.</p>
+<p><strong>c. Bugs Encountered and Resolution</strong><br>
+The most common bugs I encountered were:</p>
+<ul>
+<li>Data type mismatches: Resolved by explicitly converting variables using as.numeric(), as.factor(), etc., and verifying with str() or glimpse()</li>
+<li>Unexpected NA values affecting calculations: Addressed by using na.rm=TRUE for summary statistics and implementing proper data cleaning steps</li>
+<li>Aesthetic mapping issues: Fixed by carefully reviewing the ggplot layers and ensuring variables were properly mapped</li>
+<li>Package dependency conflicts: Solved by loading packages in the correct order and using package::function() notation for ambiguous function calls</li>
+</ul>
+<p>When debugging, I implemented a systematic approach: isolating problematic code sections, adding diagnostic print statements, and consulting error messages carefully before making changes.</p>
+<p><strong>d. Future Approach Improvements</strong><br>
+If starting again, I would:</p>
+<ul>
+<li>Create a more structured project directory with separate folders for data, scripts, and outputs</li>
+<li>Write more modular functions for repetitive tasks to improve code reusability</li>
+<li>Document my code more thoroughly with comments explaining the purpose of each major section. Sometimes I am writing a lot of code and comments can be helpful to understand the broader impact of the block.</li>
+<li>Get a little better at making atomic git commits</li>
+<li>Test visualizations earlier with small data subsets before scaling to the full dataset</li>
+</ul>
+<h3 id="geospatial-datasets">Geospatial Datasets </h3>
+<p><strong>a. NYC Building Footprints</strong><br>
+This is a vector dataset in GeoJSON format. It contains Polygon geometries.<br>
+<em>Reasoning:</em> The data follows GeoJSON structure with "type": "FeatureCollection" and features that contain "geometry" with "type": "Polygon". Each polygon is defined by arrays of coordinate pairs representing the vertices of building footprints. The coordinate structure [ [ [ lon1, lat1 ], [ lon2, lat2 ], ... ] ] is definitely characteristic of polygon geometries in GeoJSON.</p>
+<p><strong>b. Africa Population 2020</strong><br>
+This is likely a raster dataset.<br>
+<em>Reasoning:</em> As I recall, population data is typically stored as a continuous surface where each cell (that is, each pixel) represents population count or density over an area. Based on Image 2, which shows a population density map of Africa with varying intensities, this confirms it's raster data -- in particular, darker areas likely represent higher population concentrations.</p>
+<p><strong>c. Himalayan Glacial Lakes</strong><br>
+This is a vector dataset in TopoJSON format. It contains Polygon geometries.<br>
+<em>Reasoning:</em> The snippet shows a "Topology" type with "arcs" arrays containing coordinate pairs. The coordinate structure and the context (lakes) point to polygon geometries representing the outlines of many glacial lakes.</p>
+<p><strong>d. Wisconsin EV Charging</strong><br>
+This is a vector dataset in GeoJSON format. It contains Point geometries.<br>
+<em>Reasoning:</em> The data structure has "type": "FeatureCollection" with features containing "geometry" of "type": "Point". Each point has a single coordinate pair representing the location of an EV charging station. The property attributes (FUEL_TYPE, STATION_NA, etc.) provide information about any given charging location.</p>
+<p><strong>e. Zion Elevation</strong><br>
+This is likely a raster dataset.<br>
+<em>Reasoning:</em> Based on Image 1, which appears to show a digital elevation model (DEM) with grayscale values representing different elevations, this is certainly characteristic of raster data where each cell contains an elevation value. Elevation data is stored in raster format to capture the continuous nature of terrain.</p>
+<p><strong>f. Visualization of Wisconsin EV Charging Stations</strong><br>
+<img src="./hw5_files/geospatial_datasets_viz.png" alt="Visualization"><br>
+The visualization displays the geographic distribution of EV charging stations across Wisconsin, with points color-coded to indicate their operational status (available or temporarily unavailable). This approach communicates the spatial distribution and current availability of charging infrastructure, which would be valuable for EV owners planning trips in WI. The state boundary provides necessary context and the points commmunicate the key information this visualization is providing.</p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code>library<span class="token punctuation">(</span>sf<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>ggplot2<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>dplyr<span class="token punctuation">)</span>
+
+wi_ev <span class="token operator">&lt;-</span> st_read<span class="token punctuation">(</span><span class="token string">"wisconsin_ev.geojson"</span><span class="token punctuation">)</span>
+wi_boundary <span class="token operator">&lt;-</span> st_read<span class="token punctuation">(</span><span class="token string">"wisconsin_boundaries.geojson"</span><span class="token punctuation">)</span>
+<span class="token comment"># source: https://data-wi-dnr.opendata.arcgis.com/datasets/wisconsin-state-boundary-24k</span>
+
+ggplot<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    geom_sf<span class="token punctuation">(</span>data <span class="token operator">=</span> wi_boundary<span class="token punctuation">,</span> fill <span class="token operator">=</span> <span class="token string">"white"</span><span class="token punctuation">,</span> color <span class="token operator">=</span> <span class="token string">"gray70"</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    geom_sf<span class="token punctuation">(</span>data <span class="token operator">=</span> wi_ev<span class="token punctuation">,</span> aes<span class="token punctuation">(</span>color <span class="token operator">=</span> STATUS_COD<span class="token punctuation">)</span><span class="token punctuation">,</span> size <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> alpha <span class="token operator">=</span> <span class="token number">0.8</span><span class="token punctuation">)</span><span class="token operator">+</span>
+
+    scale_color_manual<span class="token punctuation">(</span>values <span class="token operator">=</span> c<span class="token punctuation">(</span><span class="token string">"E"</span> <span class="token operator">=</span> <span class="token string">"#2ca25f"</span><span class="token punctuation">,</span>
+        <span class="token string">"T"</span> <span class="token operator">=</span> <span class="token string">"#f03b20"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        name <span class="token operator">=</span> <span class="token string">"Station Status"</span><span class="token punctuation">,</span>
+        labels <span class="token operator">=</span> c<span class="token punctuation">(</span><span class="token string">"E"</span> <span class="token operator">=</span> <span class="token string">"Available"</span><span class="token punctuation">,</span>
+            <span class="token string">"T"</span> <span class="token operator">=</span> <span class="token string">"Temporarily Unavailable"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+
+    labs<span class="token punctuation">(</span>title <span class="token operator">=</span> <span class="token string">"Electric Vehicle Charging Stations in Wisconsin"</span><span class="token punctuation">,</span>
+        subtitle <span class="token operator">=</span> <span class="token string">"Location and operational status of public charging stations"</span><span class="token punctuation">,</span>
+        caption <span class="token operator">=</span> <span class="token string">"Data source: Alternative Fuels Data Center"</span><span class="token punctuation">)</span><span class="token operator">+</span>
+    theme<span class="token punctuation">(</span>
+        plot.title <span class="token operator">=</span> element_text<span class="token punctuation">(</span>face <span class="token operator">=</span> <span class="token string">"bold"</span><span class="token punctuation">,</span> size <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        plot.subtitle <span class="token operator">=</span> element_text<span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        legend.position <span class="token operator">=</span> <span class="token string">"bottom"</span><span class="token punctuation">,</span>
+        legend.title <span class="token operator">=</span> element_text<span class="token punctuation">(</span>face <span class="token operator">=</span> <span class="token string">"bold"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+</code></pre><h3 id="calfresh-comparison">CalFresh Comparison </h3>
+<p><strong>a. Graphical Encoding Definition</strong><br>
+Graphical encoding refers to the process of mapping data values to visual properties (or channels) of graphical elements in a vizualization. These visual properties include position, size, color, shape, orientation, and texture, among others. Each encoding type has different perceptual characteristics that make it more or less effective for representing different types of data.</p>
+<p>For example: In a scatter plot, we might encode a person's height using the y-position of a point, their weight using the x-position, their age using the color of the point, and their gender using the shape of the point. Here, position (y, x), color, and shape are all examples of graphical encodings.</p>
+<p><strong>b. Comparison of Visualization Approaches</strong></p>
+<p><em>Approach 1 (Small Multiples Line Chart)</em></p>
+<p>Strengths:</p>
+<ul>
+<li>Clearly shows temporal patterns and trends for each county over the full time period</li>
+<li>Direct comparison of absolute unemployment values is straightforward within each county panel</li>
+<li>The consistent y-axis scale across panels allows for comparing unemployment magnitude between counties</li>
+<li>Color encoding for years makes it easy to track the dramatic 2020 unemployment spike (pink line) compared to previous years (yay, Covid!)</li>
+</ul>
+<p>Weaknesses:</p>
+<ul>
+<li>Limited to displaying only six counties (a subset of the full dataset)</li>
+<li>Overlapping lines can create visual clutter, especially when values are close together</li>
+<li>Monthly patterns might be harder to compare across counties since they're in separate panels</li>
+<li>Requires more screen space to maintain readability compared to Approach 2</li>
+</ul>
+<p><em>Approach 2 (Heatmap)</em></p>
+<p>Strengths:</p>
+<ul>
+<li>Displays the entire dataset (all counties) in a single, space-efficient visualization</li>
+<li>The square root transformation of unemployment values helps highlight variations that might be obscured in raw values</li>
+<li>Color encoding creates a clear visual pattern showing the 2020 unemployment spike across all counties</li>
+<li>Excellent for identifying spatial and temporal clusters or anomalies</li>
+</ul>
+<p>Weaknesses:</p>
+<ul>
+<li>Precise unemployment values are harder to determine than in the line chart approach</li>
+<li>Requires a legend to interpret the color mapping to unemployment values</li>
+<li>The square root transformation makes direct value comparison less intuitive</li>
+<li>County labels can become cramped with many counties included</li>
+<li>Subtle differences in unemployment rates may be difficult to distinguish in the color gradient</li>
+</ul>
+<p><strong>c. Maximum Unemployment Rate by County and Year</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code><span class="token comment"># first, we calculate maximum unemployment rate for each county and year</span>
+county_year_max <span class="token operator">&lt;-</span> unemployment <span class="token percent-operator operator">%&gt;%</span>
+    st_drop_geometry<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>  <span class="token comment"># for faster processing</span>
+    group_by<span class="token punctuation">(</span>county<span class="token punctuation">,</span> year<span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+    summarize<span class="token punctuation">(</span>max_unemployment <span class="token operator">=</span> max<span class="token punctuation">(</span>unemployment<span class="token punctuation">,</span> na.rm <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+    ungroup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+head<span class="token punctuation">(</span>county_year_max<span class="token punctuation">)</span>
+</code></pre><p><strong>d. Implementation of Approach 1 (Small Multiples)</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code>library<span class="token punctuation">(</span>ggplot2<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>dplyr<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>lubridate<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>sf<span class="token punctuation">)</span>
+
+unemployment_focus <span class="token operator">&lt;-</span> unemployment <span class="token percent-operator operator">%&gt;%</span>
+    st_drop_geometry<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+    filter<span class="token punctuation">(</span>county <span class="token percent-operator operator">%in%</span> focus<span class="token punctuation">)</span>
+
+ggplot<span class="token punctuation">(</span>unemployment_focus<span class="token punctuation">,</span> aes<span class="token punctuation">(</span>x <span class="token operator">=</span> date<span class="token punctuation">,</span> y <span class="token operator">=</span> unemployment<span class="token punctuation">,</span> color <span class="token operator">=</span> as.factor<span class="token punctuation">(</span>year<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    geom_line<span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    facet_wrap<span class="token punctuation">(</span><span class="token operator">~</span> county<span class="token punctuation">,</span> ncol <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    scale_color_manual<span class="token punctuation">(</span>values <span class="token operator">=</span> c<span class="token punctuation">(</span><span class="token string">"2014"</span> <span class="token operator">=</span> <span class="token string">"#F8766D"</span><span class="token punctuation">,</span>
+        <span class="token string">"2015"</span> <span class="token operator">=</span> <span class="token string">"#B79F00"</span><span class="token punctuation">,</span>
+        <span class="token string">"2016"</span> <span class="token operator">=</span> <span class="token string">"#00BA38"</span><span class="token punctuation">,</span>
+        <span class="token string">"2017"</span> <span class="token operator">=</span> <span class="token string">"#00BFC4"</span><span class="token punctuation">,</span>
+        <span class="token string">"2018"</span> <span class="token operator">=</span> <span class="token string">"#619CFF"</span><span class="token punctuation">,</span>
+        <span class="token string">"2019"</span> <span class="token operator">=</span> <span class="token string">"#F564E3"</span><span class="token punctuation">,</span>
+        <span class="token string">"2020"</span> <span class="token operator">=</span> <span class="token string">"#FF64B0"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        name <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+    labs<span class="token punctuation">(</span>title <span class="token operator">=</span> <span class="token string">"Approach 1"</span><span class="token punctuation">,</span>
+        x <span class="token operator">=</span> <span class="token string">"date"</span><span class="token punctuation">,</span>
+        y <span class="token operator">=</span> <span class="token string">"unemployment"</span><span class="token punctuation">)</span>
+</code></pre><p>This code reproduces the small multiples line chart (Approach 1) shown in the first image. It displays monthly unemployment rates for six California counties from 2014-2020, with each year represented by a different colored line. The plot highlights the dramatic unemployment spike in 2020 across all counties, while also revealing distinct seasonal patterns in counties like Colusa and different baseline unemployment levels between urban (San Francisco, LA) and rural areas.</p>
+<h3 id="hiv-network">HIV Network </h3>
+<p><strong>a. Node-Link Visualization with Customization</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code>library<span class="token punctuation">(</span>tidygraph<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>ggraph<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>dplyr<span class="token punctuation">)</span>
+
+<span class="token comment"># nodes and edges data</span>
+nodes <span class="token operator">&lt;-</span> read_csv<span class="token punctuation">(</span><span class="token string">"https://github.com/krisrs1128/stat436_s25/raw/refs/heads/main/data/hiv_nodes.csv"</span><span class="token punctuation">)</span>
+edges <span class="token operator">&lt;-</span> read_csv<span class="token punctuation">(</span><span class="token string">"https://github.com/krisrs1128/stat436_s25/raw/refs/heads/main/data/hiv_edges.csv"</span><span class="token punctuation">)</span>
+
+G <span class="token operator">&lt;-</span> tbl_graph<span class="token punctuation">(</span>nodes<span class="token punctuation">,</span> edges<span class="token punctuation">)</span>
+
+<span class="token comment"># calculate node centrality (betweenness) to size nodes by importance in the network</span>
+G <span class="token operator">&lt;-</span> G <span class="token percent-operator operator">%&gt;%</span>
+  activate<span class="token punctuation">(</span>nodes<span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  mutate<span class="token punctuation">(</span>centrality <span class="token operator">=</span> centrality_betweenness<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ggraph<span class="token punctuation">(</span>G<span class="token punctuation">,</span> layout <span class="token operator">=</span> <span class="token string">"fr"</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  geom_edge_link<span class="token punctuation">(</span>alpha <span class="token operator">=</span> <span class="token number">0.1</span><span class="token punctuation">)</span> <span class="token operator">+</span>  <span class="token comment"># make edges partially transparent</span>
+  geom_node_point<span class="token punctuation">(</span>aes<span class="token punctuation">(</span>size <span class="token operator">=</span> centrality<span class="token punctuation">,</span> color <span class="token operator">=</span> name<span class="token punctuation">)</span><span class="token punctuation">,</span> alpha <span class="token operator">=</span> <span class="token number">0.7</span><span class="token punctuation">)</span><span class="token operator">+</span>  <span class="token comment"># size by centrality</span>
+  geom_node_text<span class="token punctuation">(</span>aes<span class="token punctuation">(</span>label <span class="token operator">=</span> name<span class="token punctuation">)</span><span class="token punctuation">,</span> repel <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">,</span> size <span class="token operator">=</span> <span class="token number">2.5</span><span class="token punctuation">)</span> <span class="token operator">+</span>  <span class="token comment"># add repelled country labels</span>
+  scale_size_continuous<span class="token punctuation">(</span>range <span class="token operator">=</span> c<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>  <span class="token comment"># control the range of node sizes</span>
+  theme_void<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> 
+  theme<span class="token punctuation">(</span>legend.position <span class="token operator">=</span> <span class="token string">"none"</span><span class="token punctuation">)</span><span class="token operator">+</span> 
+  labs<span class="token punctuation">(</span>title <span class="token operator">=</span> <span class="token string">"HIV Sequence Similarity Network by Country of Origin"</span><span class="token punctuation">)</span>
+</code></pre><p>Justification for customization: I implemented several customizations to improve the visualization's interpretability:</p>
+<ol>
+<li>
+<p>Node sizing based on betweenness centrality highlights sequences that serve as important bridges in the genetic similarity network, making it easier to identify potential transmission hubs or evolutionarily significant sequences.</p>
+</li>
+<li>
+<p>Edge transparency (alpha = 0.1) reduces visual clutter while preserving the network structure, making the overall pattern more visible without being overwhelmed by the 1022 edges.</p>
+</li>
+<li>
+<p>Text repulsion ensures country labels don't overlap excessively, improving readability while maintaining the spatial relationships between nodes.</p>
+</li>
+</ol>
+<p>These changes emphasize the the network's structure and highlighting important nodes, while at the same time reducing visual clutter, making patterns of genetic similarity between countries more apparent:</p>
+<p><img src="./hw5_files/hiv.png" alt="HIV Graph"></p>
+<h3 id="b-adjacency-matrix-for-simple-graph">b. Adjacency Matrix for Simple Graph </h3>
+<p>for the simple graph shown in Image 2 with 5 nodes (numbered 1-5), the exact adjacency matrix would be:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>    1  2  3  4  5
+1   0  1  1  0  1
+2   1  0  0  1  0
+3   1  0  0  0  0
+4   0  1  0  0  0
+5   1  0  0  0  0
+</code></pre><p>This matrix shows that:</p>
+<ul>
+<li>Node 1 connects to nodes 2, 3, and 5</li>
+<li>Node 2 connects to nodes 1 and 4</li>
+<li>Node 3 connects to node 1</li>
+<li>Node 4 connects to node 2</li>
+<li>Node 5 connects to node 1</li>
+</ul>
+<h3 id="c-adjacency-matrix-sketch-for-complex-graph">c. Adjacency Matrix Sketch for Complex Graph </h3>
+<p>The adjacency matrix for the complex graph would appear as a mostly sparse matrix (mostly 0s) with three dense blocks along the diagonal and sparse connections between these blocks.</p>
+<p>Rough sketch (conceptual):</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>   |████                |
+   |████                |
+   |████                |
+   |                    |
+   |        ████        |
+   |        ████        |
+   |        ████        |
+   |                    |
+   |                ████|
+   |                ████|
+   |                ████|
+</code></pre><p><em>Justification</em>: The node-link viz shows 3 distinct clusters with dense internal connections (which would form dense blocks along the diagonal of the adjacency matrix) and relatively few connections between clusters (which would appear as sparse off-diagonal elements), creating a block-diagonal pattern with some cross-connections.</p>
+<h3 id="beijing-air-pollution-part-a-only">Beijing Air Pollution (part a only) </h3>
+<p><img src="./hw5_files/bejing.png" alt="Bejing"></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code>library<span class="token punctuation">(</span>tidyverse<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>cluster<span class="token punctuation">)</span>
+
+pollution_data <span class="token operator">&lt;-</span> read_csv<span class="token punctuation">(</span><span class="token string">"https://raw.githubusercontent.com/krisrs1128/stat436_s25/refs/heads/main/data/pollution_wide.csv"</span><span class="token punctuation">)</span>
+
+clustering_data <span class="token operator">&lt;-</span> pollution_data <span class="token percent-operator operator">%&gt;%</span>
+  select<span class="token punctuation">(</span><span class="token operator">-</span>date<span class="token punctuation">)</span> <span class="token comment"># no date</span>
+
+scaled_data <span class="token operator">&lt;-</span> scale<span class="token punctuation">(</span>clustering_data<span class="token punctuation">)</span>
+
+<span class="token comment"># perform hierarchical clustering</span>
+hc <span class="token operator">&lt;-</span> hclust<span class="token punctuation">(</span>dist<span class="token punctuation">(</span>scaled_data<span class="token punctuation">)</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token string">"ward.D2"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># cut the tree to get 10 clusters</span>
+clusters <span class="token operator">&lt;-</span> cutree<span class="token punctuation">(</span>hc<span class="token punctuation">,</span> k <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span>
+
+<span class="token comment"># then,  add cluster assignments back to the original data</span>
+pollution_data<span class="token operator">$</span>cluster <span class="token operator">&lt;-</span> factor<span class="token punctuation">(</span>clusters<span class="token punctuation">)</span>
+
+pollution_patterns <span class="token operator">&lt;-</span> pollution_data <span class="token percent-operator operator">%&gt;%</span>
+  select<span class="token punctuation">(</span>date<span class="token punctuation">,</span> cluster<span class="token punctuation">,</span> starts_with<span class="token punctuation">(</span><span class="token string">"pollution_"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  pivot_longer<span class="token punctuation">(</span>
+    cols <span class="token operator">=</span> starts_with<span class="token punctuation">(</span><span class="token string">"pollution_"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    names_to <span class="token operator">=</span> <span class="token string">"hour"</span><span class="token punctuation">,</span>
+    values_to <span class="token operator">=</span> <span class="token string">"value"</span><span class="token punctuation">,</span>
+    names_prefix <span class="token operator">=</span> <span class="token string">"pollution_"</span>
+  <span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  mutate<span class="token punctuation">(</span>hour <span class="token operator">=</span> as.numeric<span class="token punctuation">(</span>hour<span class="token punctuation">)</span><span class="token punctuation">,</span>
+         variable <span class="token operator">=</span> <span class="token string">"pollution"</span><span class="token punctuation">)</span>
+
+temp_patterns <span class="token operator">&lt;-</span> pollution_data <span class="token percent-operator operator">%&gt;%</span>
+  select<span class="token punctuation">(</span>date<span class="token punctuation">,</span> cluster<span class="token punctuation">,</span> starts_with<span class="token punctuation">(</span><span class="token string">"temp_"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  pivot_longer<span class="token punctuation">(</span>
+    cols <span class="token operator">=</span> starts_with<span class="token punctuation">(</span><span class="token string">"temp_"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    names_to <span class="token operator">=</span> <span class="token string">"hour"</span><span class="token punctuation">,</span>
+    values_to <span class="token operator">=</span> <span class="token string">"value"</span><span class="token punctuation">,</span>
+    names_prefix <span class="token operator">=</span> <span class="token string">"temp_"</span>
+  <span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  mutate<span class="token punctuation">(</span>hour <span class="token operator">=</span> as.numeric<span class="token punctuation">(</span>hour<span class="token punctuation">)</span><span class="token punctuation">,</span>
+         variable <span class="token operator">=</span> <span class="token string">"temperature"</span><span class="token punctuation">)</span>
+
+wind_patterns <span class="token operator">&lt;-</span> pollution_data <span class="token percent-operator operator">%&gt;%</span>
+  select<span class="token punctuation">(</span>date<span class="token punctuation">,</span> cluster<span class="token punctuation">,</span> starts_with<span class="token punctuation">(</span><span class="token string">"wndspd_"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  pivot_longer<span class="token punctuation">(</span>
+    cols <span class="token operator">=</span> starts_with<span class="token punctuation">(</span><span class="token string">"wndspd_"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    names_to <span class="token operator">=</span> <span class="token string">"hour"</span><span class="token punctuation">,</span>
+    values_to <span class="token operator">=</span> <span class="token string">"value"</span><span class="token punctuation">,</span>
+    names_prefix <span class="token operator">=</span> <span class="token string">"wndspd_"</span>
+  <span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  mutate<span class="token punctuation">(</span>hour <span class="token operator">=</span> as.numeric<span class="token punctuation">(</span>hour<span class="token punctuation">)</span><span class="token punctuation">,</span>
+         variable <span class="token operator">=</span> <span class="token string">"wind speed"</span><span class="token punctuation">)</span>
+
+all_patterns <span class="token operator">&lt;-</span> bind_rows<span class="token punctuation">(</span>pollution_patterns<span class="token punctuation">,</span> temp_patterns<span class="token punctuation">,</span> wind_patterns<span class="token punctuation">)</span>
+
+<span class="token comment">#create ribbon plot</span>
+ggplot<span class="token punctuation">(</span>all_patterns<span class="token punctuation">,</span> aes<span class="token punctuation">(</span>x <span class="token operator">=</span> hour<span class="token punctuation">,</span> y <span class="token operator">=</span> value<span class="token punctuation">,</span> group <span class="token operator">=</span> cluster<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  stat_summary<span class="token punctuation">(</span>
+    fun.min <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> quantile<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0.25</span><span class="token punctuation">,</span> na.rm <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    fun.max <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> quantile<span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0.75</span><span class="token punctuation">,</span> na.rm <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    fun <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> median<span class="token punctuation">(</span>x<span class="token punctuation">,</span> na.rm <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    aes<span class="token punctuation">(</span>fill <span class="token operator">=</span> cluster<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    geom <span class="token operator">=</span> <span class="token string">"ribbon"</span><span class="token punctuation">,</span>
+    alpha <span class="token operator">=</span> <span class="token number">0.3</span>
+  <span class="token punctuation">)</span> <span class="token operator">+</span>
+  stat_summary<span class="token punctuation">(</span>
+    fun <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> median<span class="token punctuation">(</span>x<span class="token punctuation">,</span> na.rm <span class="token operator">=</span> <span class="token boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    aes<span class="token punctuation">(</span>color <span class="token operator">=</span> cluster<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    geom <span class="token operator">=</span> <span class="token string">"line"</span><span class="token punctuation">,</span>
+    size <span class="token operator">=</span> <span class="token number">1</span>
+  <span class="token punctuation">)</span> <span class="token operator">+</span>
+  facet_grid<span class="token punctuation">(</span>variable <span class="token operator">~</span> .<span class="token punctuation">,</span> scales <span class="token operator">=</span> <span class="token string">"free_y"</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  scale_x_continuous<span class="token punctuation">(</span>breaks <span class="token operator">=</span> seq<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  scale_color_brewer<span class="token punctuation">(</span>palette <span class="token operator">=</span> <span class="token string">"Paired"</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  scale_fill_brewer<span class="token punctuation">(</span>palette <span class="token operator">=</span> <span class="token string">"Paired"</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  labs<span class="token punctuation">(</span>
+    title <span class="token operator">=</span> <span class="token string">"Daily Patterns by Cluster"</span><span class="token punctuation">,</span>
+    subtitle <span class="token operator">=</span> <span class="token string">"Showing median and interquartile range (25th-75th percentiles)"</span><span class="token punctuation">,</span>
+    x <span class="token operator">=</span> <span class="token string">"Hour of Day"</span><span class="token punctuation">,</span>
+    y <span class="token operator">=</span> <span class="token string">"Value"</span>
+  <span class="token punctuation">)</span> <span class="token operator">+</span>
+  theme_bw<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  theme<span class="token punctuation">(</span>
+    legend.position <span class="token operator">=</span> <span class="token string">"bottom"</span><span class="token punctuation">,</span>
+    strip.background <span class="token operator">=</span> element_rect<span class="token punctuation">(</span>fill <span class="token operator">=</span> <span class="token string">"gray90"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    strip.text <span class="token operator">=</span> element_text<span class="token punctuation">(</span>face <span class="token operator">=</span> <span class="token string">"bold"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+</code></pre><p><strong>Interpretation of Patterns</strong></p>
+<p>Hierarchical clustering analysis with 10 clusters reveals a number of patterns in Beijing's daily air pollution and weather data from 2010 to 2014:</p>
+<ol>
+<li>
+<p>The middle panel shows clear temperature-based clustering, with approximately 4-5 distinct seasonal patterns ranging from cold winter days (clusters with temperatures below 0°C) to hot summer days (clusters with temperatures above 20°C). Each cluster shows the expected diurnal temperature cycle, with peaks in the afternoon and lows in early morning.</p>
+</li>
+<li>
+<p>The top panel reveals different pollution scenarios that Beijing experiences:</p>
+<ul>
+<li>High pollution clusters (around levels 5-6) that maintain elevated concentrations throughout the day</li>
+<li>Moderate pollution clusters (around levels 3-4) with slight daily fluctuations</li>
+<li>One unusual cluster (red line) showing very low pollution that increases dramatically around hour 9, possibly representing days with sudden pollution events or measurement anomalies</li>
+</ul>
+</li>
+<li>
+<p>The bottom panel shows varying wind speed profiles across clusters:</p>
+<ul>
+<li>One high wind speed cluster (blue line, cluster 2) with speeds above 4 (log-transformed) that drops significantly after hour 18</li>
+<li>Several clusters with moderate wind speeds (2-3 range) showing different daily patterns</li>
+<li>Low wind speed clusters (around 1) that correlate with higher pollution levels</li>
+</ul>
+</li>
+<li>
+<p>The visualization reveals how meteorological conditions influence air quality:</p>
+<ul>
+<li>Clusters with higher wind speeds generally show lower pollution levels, demonstrating wind's dispersal effect</li>
+<li>Temperature extremes appear related to certain pollution patterns, with some cold-weather clusters showing different pollution characteristics than warm-weather clusters</li>
+</ul>
+</li>
+</ol>
+<p>So, in general, this clustering illustrates the typical air quality scnearios in Bejing; it provides insights into how daily and seasonal weather patterns impact pollution levels. It groups days with similar overall patterns across these three variables, which could be valuable for understanding and predicting air quality under different meteorological conditions.</p>
+<h3 id="food-nutrients">Food Nutrients </h3>
+<p><strong>a. Tidymodels Recipe Definition</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code>library<span class="token punctuation">(</span>tidyverse<span class="token punctuation">)</span>
+library<span class="token punctuation">(</span>tidymodels<span class="token punctuation">)</span>
+
+nutrients <span class="token operator">&lt;-</span> read.csv<span class="token punctuation">(</span><span class="token string">"nutrients.csv"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># our tidymodels recipe for normalization and PCA</span>
+nutrients_recipe <span class="token operator">&lt;-</span> recipe<span class="token punctuation">(</span><span class="token operator">~</span> .<span class="token punctuation">,</span> data <span class="token operator">=</span> nutrients<span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  <span class="token comment"># remove non-nutrient columns from the analysis</span>
+  update_role<span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">,</span> group<span class="token punctuation">,</span> group_lumped<span class="token punctuation">,</span> new_role <span class="token operator">=</span> <span class="token string">"id"</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  <span class="token comment"># normalize all predictors</span>
+  step_normalize<span class="token punctuation">(</span>all_predictors<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  <span class="token comment"># specify that PCA should be performed</span>
+  step_pca<span class="token punctuation">(</span>all_predictors<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+nutrients_recipe
+
+<span class="token comment"># ── Recipe ─────────────────────────────────────────────────</span>
+
+<span class="token comment">#── Inputs</span>
+<span class="token comment"># Number of variables by role</span>
+<span class="token comment"># predictor: 14</span>
+<span class="token comment"># id:         4</span>
+
+<span class="token comment"># ── Operations</span>
+<span class="token comment"># • Centering and scaling for: all_predictors()</span>
+<span class="token comment"># • PCA extraction with: all_predictors()</span>
+</code></pre><p><strong>b. Principal Component Interpretation</strong></p>
+<p><img src="./hw5_files/loadings.png" alt="loadings"></p>
+<p>Based on the loadings visualization of the principal components:</p>
+<ol>
+<li>
+<p>PC1 represents overall nutrient density but in the negative direction, with negative loadings on most nutrients. Foods with more negative PC1 values are more nutrient-dense items containing substantial amounts of proteins, fats, and various micronutrients. Foods with less negative (or more positive) PC1 values would be less nutrient-dense items.</p>
+</li>
+<li>
+<p>PC2 shows a clear contrast between foods high in micronutrients like fiber, vitamins, and minerals (positive loadings) versus foods high in fats and calories (negative loadings). Foods with high PC2 values would be nutrient-rich but lower-fat foods like vegetables, fruits, and whole grains, while foods with low PC2 values would be energy-dense items like oils, butter, and fatty meats.</p>
+</li>
+</ol>
+<p><strong>c. Food Groups Sorted by Average PC2 Value</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code><span class="token comment"># we prepare the recipe</span>
+nutrients_prep <span class="token operator">&lt;-</span> prep<span class="token punctuation">(</span>nutrients_recipe<span class="token punctuation">)</span>
+
+<span class="token comment"># extract PCA scores</span>
+pca_scores <span class="token operator">&lt;-</span> bake<span class="token punctuation">(</span>nutrients_prep<span class="token punctuation">,</span> new_data <span class="token operator">=</span> <span class="token keyword keyword-NULL">NULL</span><span class="token punctuation">)</span>
+
+<span class="token comment"># add PCA scores to original dataset</span>
+nutrients_with_pca <span class="token operator">&lt;-</span> nutrients <span class="token percent-operator operator">%&gt;%</span>
+  bind_cols<span class="token punctuation">(</span>pca_scores <span class="token percent-operator operator">%&gt;%</span> select<span class="token punctuation">(</span>starts_with<span class="token punctuation">(</span><span class="token string">"PC"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">#compute average PC2 value by food group</span>
+pc2_by_group <span class="token operator">&lt;-</span> nutrients_with_pca <span class="token percent-operator operator">%&gt;%</span>
+  group_by<span class="token punctuation">(</span>group<span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  summarize<span class="token punctuation">(</span>avg_pc2 <span class="token operator">=</span> mean<span class="token punctuation">(</span>PC2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  arrange<span class="token punctuation">(</span>avg_pc2<span class="token punctuation">)</span>
+
+<span class="token comment"># print sorted group names</span>
+group_order  <span class="token operator">&lt;-</span> pc2_by_group<span class="token operator">$</span>group
+print<span class="token punctuation">(</span>group_order<span class="token punctuation">)</span>
+
+<span class="token comment"># [1] "Fats and Oils"                     "Lamb, Veal, and Game Products"</span>
+<span class="token comment"># [3] "Sausages and Luncheon Meats"       "Beef Products"</span>
+<span class="token comment"># [5] "Pork Products"                     "Poultry Products"</span>
+<span class="token comment"># [7] "Finfish and Shellfish Products"    "Ethnic Foods"</span>
+<span class="token comment"># [9] "Soups, Sauces, and Gravies"        "Nut and Seed Products"</span>
+<span class="token comment"># [11] "Restaurant Foods"                  "Dairy and Egg Products"</span>
+<span class="token comment"># [13] "Fast Foods"                        "Vegetables and Vegetable Products"</span>
+<span class="token comment"># [15] "Meals, Entrees, and Sidedishes"    "Baby Foods"</span>
+<span class="token comment"># [17] "Legumes and Legume Products"       "Fruits and Fruit Juices"</span>
+<span class="token comment"># [19] "Beverages"                         "Baked Products"</span>
+<span class="token comment"># [21] "Cereal Grains and Pasta"           "Snacks"</span>
+<span class="token comment"># [23] "Sweets"                            "Breakfast Cereals"</span>
+<span class="token comment"># [25] "Spices and Herbs"</span>
+</code></pre><p><strong>d. Visualization Analysis</strong></p>
+<pre data-role="codeBlock" data-info="r" class="language-r r"><code><span class="token comment"># we create plot of PCA scores by food group</span>
+pca_plot <span class="token operator">&lt;-</span> nutrients_with_pca <span class="token percent-operator operator">%&gt;%</span>
+  mutate<span class="token punctuation">(</span>group <span class="token operator">=</span> factor<span class="token punctuation">(</span>group<span class="token punctuation">,</span> levels <span class="token operator">=</span> group_order<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token percent-operator operator">%&gt;%</span>
+  ggplot<span class="token punctuation">(</span>aes<span class="token punctuation">(</span>x <span class="token operator">=</span> PC1<span class="token punctuation">,</span> y <span class="token operator">=</span> PC2<span class="token punctuation">,</span> color <span class="token operator">=</span> group<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  geom_point<span class="token punctuation">(</span>alpha <span class="token operator">=</span> <span class="token number">0.7</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  facet_wrap<span class="token punctuation">(</span><span class="token operator">~</span> group<span class="token punctuation">,</span> ncol <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  theme_minimal<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  labs<span class="token punctuation">(</span>
+    title <span class="token operator">=</span> <span class="token string">"Food Items by First Two Principal Components"</span><span class="token punctuation">,</span>
+    subtitle <span class="token operator">=</span> <span class="token string">"Facets ordered by increasing average PC2 value"</span><span class="token punctuation">,</span>
+    x <span class="token operator">=</span> <span class="token string">"PC1"</span><span class="token punctuation">,</span>
+    y <span class="token operator">=</span> <span class="token string">"PC2"</span>
+  <span class="token punctuation">)</span> <span class="token operator">+</span>
+  theme<span class="token punctuation">(</span>legend.position <span class="token operator">=</span> <span class="token string">"none"</span><span class="token punctuation">)</span>
+
+pca_plot
+</code></pre><p><img src="./hw5_files/pca.png" alt="pca"></p>
+<p>So, the visualization confirms my predictions about how foods would be distributed across the principal components:</p>
+<ul>
+<li>
+<p>Groups with low PC2 values (Fats/Oils, Lamb/Veal/Game, Sausages/Luncheon Meats) are indeed energy-dense foods high in fats and calories but with lower micronutrient content. These appear in the bottom panels of the visualization.</p>
+</li>
+<li>
+<p>Groups with high PC2 values (Fruits, Breakfast Cereals, Spices/Herbs) are rich in vitamins, minerals, and fiber while being relatively lower in fat content. These appear in the top panels.</p>
+</li>
+<li>
+<p>Within each food group, we can observe variation along PC1, where items farther to the left (more negative PC1) are more nutrient-dense than those farther to the right. For example, in the Meat Products categories, organ meats appear to have more negative PC1 values compared to leaner or more processed cuts.</p>
+</li>
+</ul>
+<p>The visualization effectively confirms the interpretation of PC1 and PC2, showing how PCA can reveal meaningful nutritional patterns across diverse food items. The faceting by food group and ordering by PC2 values creates a clear progression from high-fat to high-micronutrient foods, highlighting how different food categories cluster in this two-dimensional nutritional space.</p>
+<h3 id="concept-map-for-week-4">Concept Map for Week 4 </h3>
+<p><img src="./hw5_files/mermaid.png" alt="concept map for shiny"></p>
+<p>With respect to Shiny applications for interactive data visualization, this map focuses on the three core components and how they interact to create responsive data applications.</p>
+<h4 id="key-components-and-their-relationships">Key Components and Their Relationships </h4>
+<p><strong>1. UI Components (Blue Nodes)</strong><br>
+The visual interface that users interact with, consisting of:</p>
+<ul>
+<li>Inputs - Elements that capture user choices (dropdown menus, sliders, text fields)</li>
+<li>Outputs - Where results appear (plots, tables, text)</li>
+<li>Layout Structure - How elements are organized on the page</li>
+</ul>
+<p><strong>2. Server Components (Orange Nodes)</strong><br>
+The computational backbone that processes data:</p>
+<ul>
+<li>Render Functions - Transform data into visual outputs</li>
+<li>Reactive Expressions -- Store intermediate calculations that can be reused across multiple outputs</li>
+</ul>
+<p><strong>3. Reactivity System (Green Nodes)</strong><br>
+The dynamic framework that connects user actions to visual responses:</p>
+<ul>
+<li>Dependency Graph -The conceptual structure showing how inputs affect outputs</li>
+<li>Dynamic Querying - The ability to update visualizations in response to user choices</li>
+</ul>
+<h4 id="insights-about-shinys-architecture">Insights About Shiny's Architecture </h4>
+<p>The power of Shiny applications comes from how these components work together:</p>
+<ol>
+<li>
+<p>Unlike traditional scripts that execute linearly, Shiny apps respond to user actions. When a user changes an input value, all dependent computations automatically update.</p>
+</li>
+<li>
+<p>Reactive expressions serve as computational waypoints, calculating values once and sharing them with multiple outputs, creating a more efficient application structure.</p>
+</li>
+<li>
+<p>This architecture enables users to ask sequences of questions through the interface, with the visualization updating to provide answers immediately.</p>
+</li>
+<li>
+<p>By changing inputs, users can create different views of the same data, enabling comparisons that would be difficult with static visualizations.</p>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  </body></html>
