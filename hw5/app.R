@@ -11,7 +11,7 @@ library(ggplot2)
 library(plotly)
 
 prepare_spell_data <- function() {
-    spells_raw <- read_excel("DnD 5e Spells.xlsx")
+    spells_raw <- read_excel("dnd_spells.xlsx")
 
     names(spells_raw) <- trimws(names(spells_raw))
 
