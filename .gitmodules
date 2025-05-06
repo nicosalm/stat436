@@ -1,0 +1,3 @@
+[submodule "course-project"]
+	path = course-project
+	url = https://github.com/nicosalm/nobel-prizes-R
